@@ -27,6 +27,8 @@ public class RCTImageSequenceView extends ImageView {
     public RCTImageSequenceView(Context context) {
         super(context);
 
+        this.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        
         resourceDrawableIdHelper = new RCTResourceDrawableIdHelper();
     }
 
