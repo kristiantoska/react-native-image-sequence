@@ -12,6 +12,15 @@
     BOOL _loop;
 }
 
+- (id)init
+{
+    if (self = [super init]) {
+        self.contentMode = UIViewContentModeScaleAspectFill;
+    }
+
+    return self;
+}
+
 - (void)setImages:(NSArray *)images {
     __weak RCTImageSequenceView *weakSelf = self;
 
